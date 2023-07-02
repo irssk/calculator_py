@@ -8,7 +8,7 @@ class Main(Frame):
 
     def build(self):
         self.formula = "0"
-        self.lbl = Label(text=self.formula, font=("Times New Roman", 21, "bold"), bg="#000", foreground="#FFF")
+        self.lbl = Label(text=self.formula, font=("Poppins", 21, "bold"), bg="#87CEFA", foreground="darkmagenta")
         self.lbl.place(x=11, y=50)
 
         btns = [
@@ -23,8 +23,8 @@ class Main(Frame):
         y = 140
         for bt in btns:
             com = lambda x=bt: self.logicalc(x)
-            Button(text=bt, bg="#FFF",
-                   font=("Times New Roman", 15),
+            Button(text=bt, bg="#9370DB",
+                   font=("Poppins", 15),
                    command=com).place(x=x, y=y,
                                       width=115,
                                       height=79)
@@ -56,7 +56,7 @@ class Main(Frame):
 
 if __name__ == '__main__':
     root = Tk()
-    root["bg"] = "#000"
+    root["bg"] = "#ADD8E6"
     root.geometry("485x550+200+200")
     root.title("Calculator")
     root.resizable(False, False)
